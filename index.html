@@ -3,148 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FX BASIC HUB | Forex Trading Insights</title>
+<title>FX BASIC HUB | Forex Insights</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,sans-serif;
+background:#050b12;
+color:#fff;
+line-height:1.6
 }
-
-body {
-    font-family: Arial, sans-serif;
-    background: #07111f;
-    color: white;
-    line-height: 1.6;
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px 20px;
+background:
+radial-gradient(circle at 50% 20%,#123b38 0,#08151e 40%,#050b12 75%);
 }
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 30px 20px;
-    background: linear-gradient(135deg, #07111f, #102a43);
+.container{max-width:900px;margin:auto}
+.logo{
+font-size:22px;
+font-weight:bold;
+letter-spacing:4px;
+margin-bottom:30px
 }
-
-.container {
-    max-width: 900px;
-    width: 100%;
+.logo span{color:#18e58a}
+.badge{
+display:inline-block;
+padding:8px 16px;
+border:1px solid #18e58a;
+border-radius:30px;
+color:#18e58a;
+font-size:13px;
+margin-bottom:20px
 }
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
+h1{
+font-size:58px;
+line-height:1.1;
+margin-bottom:20px
 }
-
-.logo span {
-    color: #18d47b;
+h1 span{color:#18e58a}
+.hero p{
+max-width:680px;
+margin:auto;
+color:#b9c7d4;
+font-size:18px
 }
-
-h1 {
-    font-size: 52px;
-    margin-bottom: 20px;
+.btn{
+display:inline-block;
+margin-top:32px;
+padding:16px 34px;
+border-radius:8px;
+background:#18e58a;
+color:#03110b;
+text-decoration:none;
+font-weight:bold;
+font-size:16px;
+box-shadow:0 8px 30px rgba(24,229,138,.2)
 }
-
-h1 span {
-    color: #18d47b;
+.btn:hover{transform:translateY(-2px)}
+section{padding:80px 20px}
+.section{max-width:1050px;margin:auto;text-align:center}
+h2{font-size:36px;margin-bottom:15px}
+.subtitle{color:#9eacb9;margin-bottom:40px}
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px
 }
-
-.hero p {
-    max-width: 650px;
-    margin: auto;
-    color: #c8d3df;
-    font-size: 18px;
+.card{
+background:#0b1621;
+border:1px solid #1b2c3c;
+padding:28px 20px;
+border-radius:14px
 }
-
-.btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 32px;
-    background: #18d47b;
-    color: #06111c;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s;
+.icon{font-size:32px;margin-bottom:15px}
+.card h3{color:#18e58a;margin-bottom:10px}
+.card p{color:#9eacb9;font-size:14px}
+.cta{
+background:linear-gradient(135deg,#0c211e,#09141f);
+text-align:center
 }
-
-.btn:hover {
-    transform: translateY(-3px);
+.cta p{
+max-width:650px;
+margin:0 auto;
+color:#b9c7d4
 }
-
-section {
-    padding: 70px 20px;
+.disclaimer{
+padding:50px 20px;
+background:#03070c;
+text-align:center
 }
-
-.section-container {
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+.disclaimer p{
+max-width:850px;
+margin:auto;
+font-size:13px;
+color:#7f8c99
 }
-
-h2 {
-    font-size: 34px;
-    margin-bottom: 35px;
+footer{
+padding:25px;
+text-align:center;
+background:#020508;
+color:#697684;
+font-size:13px
 }
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+@media(max-width:800px){
+.cards{grid-template-columns:repeat(2,1fr)}
+h1{font-size:44px}
 }
-
-.card {
-    background: #0e1d2e;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #20364d;
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: #18d47b;
-}
-
-.card p {
-    color: #bdc9d6;
-}
-
-.cta {
-    background: #0b1929;
-    text-align: center;
-}
-
-.disclaimer {
-    background: #050c15;
-    color: #9eabb8;
-    font-size: 14px;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #03080e;
-    color: #8996a3;
-}
-
-@media (max-width: 650px) {
-    h1 {
-        font-size: 36px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
+@media(max-width:500px){
+.cards{grid-template-columns:1fr}
+h1{font-size:36px}
+.hero{min-height:80vh}
 }
 </style>
 </head>
@@ -152,95 +125,112 @@ footer {
 <body>
 
 <section class="hero">
-    <div class="container">
-        <div class="logo">FX <span>BASIC HUB</span></div>
+<div class="container">
 
-        <h1>Forex <span>Trading Insights</span></h1>
+<div class="logo">FX <span>BASIC HUB</span></div>
 
-        <p>
-            Learn about the Forex market with educational content,
-            market insights and regular trading updates.
-        </p>
+<div class="badge">FOREX • EDUCATION • MARKET INSIGHTS</div>
 
-        <a class="btn" href="https://t.me/FXBasicsHub1" target="_blank">
-            JOIN TELEGRAM
-        </a>
-    </div>
+<h1>Understand The <span>Forex Market</span></h1>
+
+<p>
+Learn about Forex trading through educational content,
+market insights and regular market updates from FX BASIC HUB.
+</p>
+
+<a class="btn" href="https://t.me/FXBasicsHub1" target="_blank">
+JOIN TELEGRAM →
+</a>
+
+</div>
 </section>
+
 
 <section>
-    <div class="section-container">
-        <h2>What You'll Get</h2>
+<div class="section">
 
-        <div class="cards">
+<h2>What You'll Get</h2>
 
-            <div class="card">
-                <h3>📊 Market Analysis</h3>
-                <p>
-                    Educational analysis of Forex market trends
-                    and important market movements.
-                </p>
-            </div>
+<p class="subtitle">
+Useful Forex information delivered through our Telegram community.
+</p>
 
-            <div class="card">
-                <h3>📈 Trading Insights</h3>
-                <p>
-                    Learn about potential market setups and
-                    important trading concepts.
-                </p>
-            </div>
+<div class="cards">
 
-            <div class="card">
-                <h3>📰 Market Updates</h3>
-                <p>
-                    Stay informed about important developments
-                    that may affect the Forex market.
-                </p>
-            </div>
+<div class="card">
+<div class="icon">📊</div>
+<h3>Market Analysis</h3>
+<p>
+Educational analysis of market trends and important Forex movements.
+</p>
+</div>
 
-            <div class="card">
-                <h3>📚 Forex Education</h3>
-                <p>
-                    Simple educational content for people who
-                    want to understand Forex trading better.
-                </p>
-            </div>
+<div class="card">
+<div class="icon">📈</div>
+<h3>Trading Insights</h3>
+<p>
+Learn about trading concepts, setups and market structure.
+</p>
+</div>
 
-        </div>
-    </div>
+<div class="card">
+<div class="icon">📰</div>
+<h3>Market Updates</h3>
+<p>
+Stay informed about important Forex market developments.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">📚</div>
+<h3>Forex Education</h3>
+<p>
+Simple educational content for beginners and developing traders.
+</p>
+</div>
+
+</div>
+</div>
 </section>
+
 
 <section class="cta">
-    <div class="section-container">
-        <h2>Start Learning Forex</h2>
+<div class="section">
 
-        <p>
-            Join FX BASIC HUB on Telegram for Forex education,
-            market insights and updates.
-        </p>
+<h2>Join FX BASIC HUB</h2>
 
-        <a class="btn" href="https://t.me/FXBasicsHub1" target="_blank">
-            JOIN FX BASIC HUB
-        </a>
-    </div>
+<p>
+Follow our Telegram channel for Forex education,
+market insights and trading-related updates.
+</p>
+
+<a class="btn" href="https://t.me/FXBasicsHub1" target="_blank">
+JOIN OUR TELEGRAM
+</a>
+
+</div>
 </section>
+
 
 <section class="disclaimer">
-    <div class="section-container">
-        <h2>Risk Disclaimer</h2>
+<div class="section">
 
-        <p>
-            Forex trading involves significant risk and may not be
-            suitable for everyone. Past performance does not guarantee
-            future results. The information provided by FX BASIC HUB
-            is for educational and informational purposes only and is
-            not personalized financial advice or a guarantee of profits.
-        </p>
-    </div>
+<h2>Risk Disclaimer</h2>
+
+<p>
+Forex trading involves significant risk and may not be suitable
+for everyone. Past performance does not guarantee future results.
+The information provided by FX BASIC HUB is for educational and
+informational purposes only and should not be considered personalized
+financial advice or a guarantee of profits.
+</p>
+
+</div>
 </section>
 
+
 <footer>
-    © 2026 FX BASIC HUB. All Rights Reserved.
+© 2026 FX BASIC HUB • Educational Forex Community
 </footer>
 
 </body>
